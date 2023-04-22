@@ -98,7 +98,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // IMP IMP IMP IMP IMP IMP this is basically the point where we are fetching the data from our backend which is runnig at 5001 and that backend is fetching data from OPENAI api
-  const response = await fetch("http://localhost:5001", {
+  const response = await fetch("https://skynetgpt-bxew.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
